@@ -2,16 +2,14 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
   <display-name>Practice-Project2</display-name>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
+  <welcome-file>index.html</welcome-file>
     <welcome-file>index.jsp</welcome-file>
     <welcome-file>index.htm</welcome-file>
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
-  
-  
-    <servlet>
+   <servlet>
     <servlet-name>GetHandler</servlet-name>
     <servlet-class>practiceprojectexample.GetHandler</servlet-class>
   </servlet>
@@ -20,6 +18,8 @@
     <servlet-class>practiceprojectexample.PostHandler</servlet-class>
   </servlet>
   <servlet-mapping>
+  
+  
     <servlet-name>GetHandler</servlet-name>
     <url-pattern>/gethandler</url-pattern>
   </servlet-mapping>
@@ -28,19 +28,7 @@
     <url-pattern>/posthandler</url-pattern>
   </servlet-mapping>
   
-  
-  
-    <servlet>
-    <servlet-name>MyServlet</servlet-name>
-    <servlet-class>practiceprojectexample.MyServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>practiceprojectexample.MyServlet</servlet-name>
-    <url-pattern>/servletConcept</url-pattern>
-  </servlet-mapping>
-  
-  
-    <servlet>
+        <servlet>
     <servlet-name>InterfaceDemo</servlet-name>
     <servlet-class>practiceprojectexample.InterfaceDemo</servlet-class>
   </servlet>
@@ -50,8 +38,8 @@
     <url-pattern>/interface</url-pattern>
   </servlet-mapping>
   
-  
-  <filter>
+    
+    <filter>
     <filter-name>loginFilter</filter-name>
     <filter-class>practiceprojectexample.LoginFilter</filter-class>
   </filter>
@@ -87,108 +75,5 @@
     <url-pattern>/info</url-pattern>
   </servlet-mapping>
   
-  
-  
-   <servlet>
-    <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>practiceprojectexample.LoginServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>Dashboard</servlet-name>
-    <servlet-class>practiceprojectexample.Dashboard</servlet-class>
-  </servlet>
- 
-  <servlet-mapping>
-    <servlet-name>Dashboard</servlet-name>
-    <url-pattern>/dashboard</url-pattern>
-  </servlet-mapping>
-   <servlet-mapping>
-    <servlet-name>LoginServlet</servlet-name>
-    <url-pattern>/login</url-pattern>
-  </servlet-mapping>
-  
-
-<servlet>
-    <servlet-name>LoginServlet1</servlet-name>
-    <servlet-class>.practiceprojectexampleLoginServlet1</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>Dashboard1</servlet-name>
-    <servlet-class>practiceprojectexample.Dashboard1</servlet-class>
-  </servlet>
- 
-  <servlet-mapping>
-    <servlet-name>Dashboard1</servlet-name>
-    <url-pattern>/dashboard</url-pattern>
-  </servlet-mapping>
-   <servlet-mapping>
-    <servlet-name>LoginServlet1</servlet-name>
-    <url-pattern>/login</url-pattern>
-  </servlet-mapping>
-
-
-  <servlet>
-    <servlet-name>LoginServlet2</servlet-name>
-    <servlet-class>practiceprojectexample.LoginServlet2</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>Dashboard2</servlet-name>
-    <servlet-class>practiceprojectexample.Dashboard2</servlet-class>
-  </servlet>
- 
-  <servlet-mapping>
-    <servlet-name>Dashboard2</servlet-name>
-    <url-pattern>/dashboard</url-pattern>
-  </servlet-mapping>
-   <servlet-mapping>
-    <servlet-name>LoginServlet2</servlet-name>
-    <url-pattern>/login</url-pattern>
-  </servlet-mapping>
-  
-  
-  <servlet>
-    <servlet-name>LoginServlet3</servlet-name>
-    <servlet-class>practiceprojectexample.LoginServlet3</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>Dashboard3</servlet-name>
-    <servlet-class>practiceprojectexample.Dashboard3</servlet-class>
-  </servlet>
- 
-  <servlet-mapping>
-    <servlet-name>Dashboard3</servlet-name>
-    <url-pattern>/dashboard</url-pattern>
-  </servlet-mapping>
-   <servlet-mapping>
-    <servlet-name>LoginServlet3</servlet-name>
-    <url-pattern>/login</url-pattern>
-  </servlet-mapping>
-  
-  
-  <servlet>
-    <servlet-name>Login</servlet-name>
-    <servlet-class>loginlogout.Login</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>Dashboard4</servlet-name>
-    <servlet-class>loginlogout.Dashboard4</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>Logout</servlet-name>
-    <servlet-class>loginlogout.Logout</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Logout</servlet-name>
-    <url-pattern>/logout</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>Login</servlet-name>
-    <url-pattern>/login</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>Dashboard4</servlet-name>
-    <url-pattern>/dashboard</url-pattern>
-  </servlet-mapping>
-  
-   
 </web-app>
+  
